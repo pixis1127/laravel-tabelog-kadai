@@ -57,7 +57,7 @@ Route::get('subscription', [StripeController::class, 'subscription'])->name('sub
 Route::post('subscription', [StripeController::class, 'afterpay'])->name('stripe.afterpay');
 
 Route::get('edit_subscription/{user}', [StripeController::class, 'edit_subscription'])->middleware(['auth', 'basic'])->name('edit_subscription');
-Route::post('update_subscription', [StripeController::class, 'edit_subscription,'])->middleware(['auth', 'basic'])->name('stripe.update');
+Route::post('update_subscription', [StripeController::class, 'stripe_update'])->middleware(['auth', 'basic'])->name('stripe.update');
 
 Route::get('cancel_subscription/{user}', [StripeController::class, 'stripe_cancel'])->middleware(['auth', 'basic'])->name('cancel_subscription');
 Route::post('cancel_subscription/{user}', [StripeController::class, 'cancel_subscription'])->middleware(['auth', 'basic'])->name('stripe.cancel');
