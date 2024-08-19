@@ -17,6 +17,8 @@
                          <div class="container mt-3">
                              <h5 class="w-100 kadai_002-reservation-item-text">{{ $reservation->store->name }}</h5>
                              <h6 class="w-100 kadai_002-reservation-item-text">&yen;{{ $reservation->store->price }}</h6>
+                             <h6 class="w-100 kadai_002-reservation-item-text">{{ $reservation->store->reservation_day }}</h6>
+                             <h6 class="w-100 kadai_002-reservation-item-text">{{ $reservation->store->reservation_time}}</h6>
                          </div>
                      </div>
                  </div>

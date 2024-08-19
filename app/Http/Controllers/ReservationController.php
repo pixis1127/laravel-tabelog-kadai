@@ -31,7 +31,7 @@ class ReservationController extends Controller
         $reservation->user_id = Auth::user()->id;
         $reservation->save();
 
-        return back();
+        return back()->with('flash_message', '予約が完了しました。');;
     }
 
 
