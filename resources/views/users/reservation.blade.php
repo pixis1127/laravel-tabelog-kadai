@@ -12,6 +12,7 @@
                  <div class="col-md-7 mt-2">
                      <div class="d-inline-flex">
                          <a href="{{ route('stores.show', $reservation->id) }}" class="w-25">
+                         <a href="{{ route('mypage.reservation', $reservation->id) }}" class="w-25">
                              <img src="{{ asset('img/dummy.png')}}" class="img-fluid w-100">
                          </a>
                          <div class="container mt-3">
